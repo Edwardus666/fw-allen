@@ -1,0 +1,390 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup Label="ProjectConfigurations">
+    <ProjectConfiguration Include="Debug|Win32">
+      <Configuration>Debug</Configuration>
+      <Platform>Win32</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Release|Win32">
+      <Configuration>Release</Configuration>
+      <Platform>Win32</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Debug|x64">
+      <Configuration>Debug</Configuration>
+      <Platform>x64</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Release|x64">
+      <Configuration>Release</Configuration>
+      <Platform>x64</Platform>
+    </ProjectConfiguration>
+  </ItemGroup>
+  <PropertyGroup Label="Globals">
+    <VCProjectVersion>16.0</VCProjectVersion>
+    <ProjectGuid>{BD4A66D4-0BF8-42DD-9EED-98FEEFF7C305}</ProjectGuid>
+    <RootNamespace>Ccu</RootNamespace>
+    <WindowsTargetPlatformVersion>10.0</WindowsTargetPlatformVersion>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.Default.props" />
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'" Label="Configuration">
+    <ConfigurationType>Application</ConfigurationType>
+    <UseDebugLibraries>true</UseDebugLibraries>
+    <PlatformToolset>v142</PlatformToolset>
+    <CharacterSet>MultiByte</CharacterSet>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'" Label="Configuration">
+    <ConfigurationType>Application</ConfigurationType>
+    <UseDebugLibraries>false</UseDebugLibraries>
+    <PlatformToolset>v142</PlatformToolset>
+    <WholeProgramOptimization>true</WholeProgramOptimization>
+    <CharacterSet>MultiByte</CharacterSet>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|x64'" Label="Configuration">
+    <ConfigurationType>Application</ConfigurationType>
+    <UseDebugLibraries>true</UseDebugLibraries>
+    <PlatformToolset>v142</PlatformToolset>
+    <CharacterSet>MultiByte</CharacterSet>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|x64'" Label="Configuration">
+    <ConfigurationType>Application</ConfigurationType>
+    <UseDebugLibraries>false</UseDebugLibraries>
+    <PlatformToolset>v142</PlatformToolset>
+    <WholeProgramOptimization>true</WholeProgramOptimization>
+    <CharacterSet>MultiByte</CharacterSet>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.props" />
+  <ImportGroup Label="ExtensionSettings">
+  </ImportGroup>
+  <ImportGroup Label="Shared">
+  </ImportGroup>
+  <ImportGroup Label="PropertySheets" Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <ImportGroup Label="PropertySheets" Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <ImportGroup Label="PropertySheets" Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <ImportGroup Label="PropertySheets" Condition="'$(Configuration)|$(Platform)'=='Release|x64'">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <PropertyGroup Label="UserMacros" />
+  <PropertyGroup />
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
+    <ClCompile>
+      <WarningLevel>Level3</WarningLevel>
+      <Optimization>Disabled</Optimization>
+      <SDLCheck>true</SDLCheck>
+      <ConformanceMode>true</ConformanceMode>
+      <AdditionalIncludeDirectories>C:\Keil_v5\ARM\ARMCC\include;..\..\Src\CMSIS;..\..\Src\CMSIS;..\..\Src\CMSIS\GD\GD32F403\Include;..\..\Src\CMSIS\GD\GD32F403\Include;..\..\Src\GD32F403_standard_peripheral\Include;..\..\Src\Main;..\..\Src\common;..\..\Src\Driver;..\..\Src\CanOpenSlave;..\..\Src\CanOpenSlave\Stack;..\..\Src\CanOpenSlave\Stack\VsDrv;..\..\Src\CanOpenMaster;..\..\Src\Pms;..\..\Src\485Node;..\..\Src\Base;..\..\Src\WhMeter;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <PreprocessorDefinitions>CONFIG_EVT2;PMS_OD;CFG_EX_FRAME;CFG_BLOCK_TRANS;CFG_LOG;CFG_RPDO;_MBCS;%(PreprocessorDefinitions);__CC_ARM;CO_USE_GLOBALS;CO_NO_SDO_CLIENT</PreprocessorDefinitions>
+    </ClCompile>
+    <Link>
+      <SubSystem>Console</SubSystem>
+    </Link>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">
+    <ClCompile>
+      <WarningLevel>Level3</WarningLevel>
+      <Optimization>Disabled</Optimization>
+      <SDLCheck>true</SDLCheck>
+      <ConformanceMode>true</ConformanceMode>
+      <AdditionalIncludeDirectories>C:\Keil_v5\ARM\ARMCC\include;..\..\Src\CMSIS;..\..\Src\CMSIS;..\..\Src\CMSIS\GD\GD32F403\Include;..\..\Src\CMSIS\GD\GD32F403\Include;..\..\Src\GD32F403_standard_peripheral\Include;..\..\Src\Main;..\..\Src\common;..\..\Src\Driver;..\..\Src\CanOpenSlave;..\..\Src\CanOpenSlave\Stack;..\..\Src\CanOpenSlave\Stack\VsDrv;..\..\Src\CanOpenMaster;..\..\Src\Pms;..\..\Src\485Node;..\..\Src\Base;..\..\Src\WhMeter;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <AdditionalUsingDirectories>CONFIG_EVT2;PMS_OD;CFG_EX_FRAME;CFG_BLOCK_TRANS;CFG_LOG;CFG_RPDO;_MBCS;%(PreprocessorDefinitions);__CC_ARM;CO_USE_GLOBALS;CO_NO_SDO_CLIENT</AdditionalUsingDirectories>
+    </ClCompile>
+    <Link>
+      <SubSystem>Console</SubSystem>
+    </Link>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
+    <ClCompile>
+      <WarningLevel>Level3</WarningLevel>
+      <Optimization>MaxSpeed</Optimization>
+      <FunctionLevelLinking>true</FunctionLevelLinking>
+      <IntrinsicFunctions>true</IntrinsicFunctions>
+      <SDLCheck>true</SDLCheck>
+      <ConformanceMode>true</ConformanceMode>
+    </ClCompile>
+    <Link>
+      <SubSystem>Console</SubSystem>
+      <EnableCOMDATFolding>true</EnableCOMDATFolding>
+      <OptimizeReferences>true</OptimizeReferences>
+    </Link>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Release|x64'">
+    <ClCompile>
+      <WarningLevel>Level3</WarningLevel>
+      <Optimization>MaxSpeed</Optimization>
+      <FunctionLevelLinking>true</FunctionLevelLinking>
+      <IntrinsicFunctions>true</IntrinsicFunctions>
+      <SDLCheck>true</SDLCheck>
+      <ConformanceMode>true</ConformanceMode>
+    </ClCompile>
+    <Link>
+      <SubSystem>Console</SubSystem>
+      <EnableCOMDATFolding>true</EnableCOMDATFolding>
+      <OptimizeReferences>true</OptimizeReferences>
+    </Link>
+  </ItemDefinitionGroup>
+  <ItemGroup>
+    <ClInclude Include="..\..\Src\485Node\BleLock.h" />
+    <ClInclude Include="..\..\Src\485Node\Rs485Protocol.h" />
+    <ClInclude Include="..\..\Src\485Node\SbwMgr.h" />
+    <ClInclude Include="..\..\Src\485Node\ShelfLock.h" />
+    <ClInclude Include="..\..\Src\485Node\Rs485ProtocolNode.h" />
+    <ClInclude Include="..\..\Src\485Node\ShelfLockOd.h" />
+    <ClInclude Include="..\..\Src\Base\BaseOd.h" />
+    <ClInclude Include="..\..\Src\Base\CcuDef.h" />
+    <ClInclude Include="..\..\Src\Base\Dev.h" />
+    <ClInclude Include="..\..\Src\Base\HwFwVer.h" />
+    <ClInclude Include="..\..\Src\Base\IdentifyInfo.h" />
+    <ClInclude Include="..\..\Src\Base\Obj.h" />
+    <ClInclude Include="..\..\Src\Base\Sensor.h" />
+    <ClInclude Include="..\..\Src\Base\Utp.h" />
+    <ClInclude Include="..\..\Src\Base\UtpDef.h" />
+    <ClInclude Include="..\..\Src\Base\UtpPdo.h" />
+    <ClInclude Include="..\..\Src\CanOpenMaster\BlockProtocol.h" />
+    <ClInclude Include="..\..\Src\CanOpenMaster\Emcy.h" />
+    <ClInclude Include="..\..\Src\CanOpenMaster\Frame.h" />
+    <ClInclude Include="..\..\Src\CanOpenMaster\Master.h" />
+    <ClInclude Include="..\..\Src\CanOpenMaster\MasterNode.h" />
+    <ClInclude Include="..\..\Src\CanOpenMaster\MasterSdo.h" />
+    <ClInclude Include="..\..\Src\CanOpenMaster\Od.h" />
+    <ClInclude Include="..\..\Src\CanOpenMaster\Pdo.h" />
+    <ClInclude Include="..\..\Src\CanOpenMaster\SdoDef.h" />
+    <ClInclude Include="..\..\Src\CanOpenMaster\SegmentProtocol.h" />
+    <ClInclude Include="..\..\Src\CanOpenSlave\CO_driver.h" />
+    <ClInclude Include="..\..\Src\CanOpenSlave\CO_OD_Def.h" />
+    <ClInclude Include="..\..\Src\CanOpenSlave\Slave.h" />
+    <ClInclude Include="..\..\Src\CanOpenSlave\CANopen.h" />
+    <ClInclude Include="..\..\Src\CanOpenSlave\CO_OD.h" />
+    <ClInclude Include="..\..\Src\CanOpenSlave\stack\CO_Emergency.h" />
+    <ClInclude Include="..\..\Src\CanOpenSlave\stack\CO_HBconsumer.h" />
+    <ClInclude Include="..\..\Src\CanOpenSlave\stack\CO_NMT_Heartbeat.h" />
+    <ClInclude Include="..\..\Src\CanOpenSlave\stack\CO_PDO.h" />
+    <ClInclude Include="..\..\Src\CanOpenSlave\stack\CO_SDO.h" />
+    <ClInclude Include="..\..\Src\CanOpenSlave\stack\CO_SDOmaster.h" />
+    <ClInclude Include="..\..\Src\CanOpenSlave\stack\CO_SYNC.h" />
+    <ClInclude Include="..\..\Src\CanOpenSlave\stack\CO_trace.h" />
+    <ClInclude Include="..\..\Src\CanOpenSlave\stack\crc16-ccitt.h" />
+    <ClInclude Include="..\..\Src\CanOpenSlave\UnitOD.h" />
+    <ClInclude Include="..\..\Src\CMSIS\core_cm4.h" />
+    <ClInclude Include="..\..\Src\CMSIS\core_cm4_simd.h" />
+    <ClInclude Include="..\..\Src\CMSIS\core_cmFunc.h" />
+    <ClInclude Include="..\..\Src\CMSIS\core_cmInstr.h" />
+    <ClInclude Include="..\..\Src\CMSIS\GD\GD32F403\Include\gd32f403.h" />
+    <ClInclude Include="..\..\Src\CMSIS\GD\GD32F403\Include\system_gd32f403.h" />
+    <ClInclude Include="..\..\Src\common\ArchDef.h" />
+    <ClInclude Include="..\..\Src\common\CheckSum.h" />
+    <ClInclude Include="..\..\Src\common\CmdLine.h" />
+    <ClInclude Include="..\..\Src\common\CommChecker.h" />
+    <ClInclude Include="..\..\Src\common\Common.h" />
+    <ClInclude Include="..\..\Src\common\CostTime.h" />
+    <ClInclude Include="..\..\Src\common\crc16.h" />
+    <ClInclude Include="..\..\Src\common\crc32.h" />
+    <ClInclude Include="..\..\Src\common\DateTime.h" />
+    <ClInclude Include="..\..\Src\common\Debug.h" />
+    <ClInclude Include="..\..\Src\common\Led.h" />
+    <ClInclude Include="..\..\Src\common\List.h" />
+    <ClInclude Include="..\..\Src\common\Log.h" />
+    <ClInclude Include="..\..\Src\common\md5.h" />
+    <ClInclude Include="..\..\Src\common\Message.h" />
+    <ClInclude Include="..\..\Src\common\MsgDef.h" />
+    <ClInclude Include="..\..\Src\common\OdGlobal.h" />
+    <ClInclude Include="..\..\Src\common\Page.h" />
+    <ClInclude Include="..\..\Src\common\Printf.h" />
+    <ClInclude Include="..\..\Src\common\queue.h" />
+    <ClInclude Include="..\..\Src\common\Record.h" />
+    <ClInclude Include="..\..\Src\common\RetCode.h" />
+    <ClInclude Include="..\..\Src\common\SafeBuf.h" />
+    <ClInclude Include="..\..\Src\common\SectorMgr.h" />
+    <ClInclude Include="..\..\Src\common\StringEx.h" />
+    <ClInclude Include="..\..\Src\common\SwTimer.h" />
+    <ClInclude Include="..\..\Src\common\Threshold.h" />
+    <ClInclude Include="..\..\Src\common\Tlv.h" />
+    <ClInclude Include="..\..\Src\common\TlvPair.h" />
+    <ClInclude Include="..\..\Src\common\typedef.h" />
+    <ClInclude Include="..\..\Src\Driver\AdcUse.h" />
+    <ClInclude Include="..\..\Src\Driver\DriverAdc.h" />
+    <ClInclude Include="..\..\Src\Driver\DriverCan.h" />
+    <ClInclude Include="..\..\Src\Driver\DriverFmc.h" />
+    <ClInclude Include="..\..\Src\Driver\DriverFun.h" />
+    <ClInclude Include="..\..\Src\Driver\DriverIo.h" />
+    <ClInclude Include="..\..\Src\Driver\DriverLed.h" />
+    <ClInclude Include="..\..\Src\Driver\DriverTimer.h" />
+    <ClInclude Include="..\..\Src\Driver\DriverUart.h" />
+    <ClInclude Include="..\..\Src\Driver\NTC.h" />
+    <ClInclude Include="..\..\Src\Driver\NTCLib.h" />
+    <ClInclude Include="..\..\Src\Driver\RcuMap.h" />
+    <ClInclude Include="..\..\Src\GD32F403_standard_peripheral\Include\gd32f403_adc.h" />
+    <ClInclude Include="..\..\Src\GD32F403_standard_peripheral\Include\gd32f403_bkp.h" />
+    <ClInclude Include="..\..\Src\GD32F403_standard_peripheral\Include\gd32f403_can.h" />
+    <ClInclude Include="..\..\Src\GD32F403_standard_peripheral\Include\gd32f403_crc.h" />
+    <ClInclude Include="..\..\Src\GD32F403_standard_peripheral\Include\gd32f403_ctc.h" />
+    <ClInclude Include="..\..\Src\GD32F403_standard_peripheral\Include\gd32f403_dac.h" />
+    <ClInclude Include="..\..\Src\GD32F403_standard_peripheral\Include\gd32f403_dbg.h" />
+    <ClInclude Include="..\..\Src\GD32F403_standard_peripheral\Include\gd32f403_dma.h" />
+    <ClInclude Include="..\..\Src\GD32F403_standard_peripheral\Include\gd32f403_exmc.h" />
+    <ClInclude Include="..\..\Src\GD32F403_standard_peripheral\Include\gd32f403_exti.h" />
+    <ClInclude Include="..\..\Src\GD32F403_standard_peripheral\Include\gd32f403_fmc.h" />
+    <ClInclude Include="..\..\Src\GD32F403_standard_peripheral\Include\gd32f403_fwdgt.h" />
+    <ClInclude Include="..\..\Src\GD32F403_standard_peripheral\Include\gd32f403_gpio.h" />
+    <ClInclude Include="..\..\Src\GD32F403_standard_peripheral\Include\gd32f403_i2c.h" />
+    <ClInclude Include="..\..\Src\GD32F403_standard_peripheral\Include\gd32f403_misc.h" />
+    <ClInclude Include="..\..\Src\GD32F403_standard_peripheral\Include\gd32f403_pmu.h" />
+    <ClInclude Include="..\..\Src\GD32F403_standard_peripheral\Include\gd32f403_rcu.h" />
+    <ClInclude Include="..\..\Src\GD32F403_standard_peripheral\Include\gd32f403_rtc.h" />
+    <ClInclude Include="..\..\Src\GD32F403_standard_peripheral\Include\gd32f403_sdio.h" />
+    <ClInclude Include="..\..\Src\GD32F403_standard_peripheral\Include\gd32f403_spi.h" />
+    <ClInclude Include="..\..\Src\GD32F403_standard_peripheral\Include\gd32f403_timer.h" />
+    <ClInclude Include="..\..\Src\GD32F403_standard_peripheral\Include\gd32f403_usart.h" />
+    <ClInclude Include="..\..\Src\GD32F403_standard_peripheral\Include\gd32f403_wwdgt.h" />
+    <ClInclude Include="..\..\Src\Main\CcuLed.h" />
+    <ClInclude Include="..\..\Src\Main\LogUser.h" />
+    <ClInclude Include="..\..\Src\Main\MemMap.h" />
+    <ClInclude Include="..\..\Src\Main\console.h" />
+    <ClInclude Include="..\..\Src\Main\Fsm.h" />
+    <ClInclude Include="..\..\Src\Main\gd32f403_it.h" />
+    <ClInclude Include="..\..\Src\Main\gd32f403_libopt.h" />
+    <ClInclude Include="..\..\Src\Main\main.h" />
+    <ClInclude Include="..\..\Src\Main\Nvds.h" />
+    <ClInclude Include="..\..\Src\Main\OtaFile.h" />
+    <ClInclude Include="..\..\Src\Main\Sm.h" />
+    <ClInclude Include="..\..\Src\Main\systick.h" />
+    <ClInclude Include="..\..\Src\Pms\Bms.h" />
+    <ClInclude Include="..\..\Src\Pms\Charger.h" />
+    <ClInclude Include="..\..\Src\Pms\Pms.h" />
+    <ClInclude Include="..\..\Src\Pms\PmsMgr.h" />
+    <ClInclude Include="..\..\Src\Pms\PmsOd.h" />
+    <ClInclude Include="..\..\Src\WhMeter\MeterOd.h" />
+    <ClInclude Include="..\..\Src\WhMeter\MeterProtocol.h" />
+    <ClInclude Include="..\..\Src\WhMeter\WhMeter.h" />
+    <ClInclude Include="C:\Keil_v5\ARM\ARMCC\include\stdint.h" />
+  </ItemGroup>
+  <ItemGroup>
+    <ClCompile Include="..\..\Src\485Node\BleLock.c" />
+    <ClCompile Include="..\..\Src\485Node\Rs485Protocol.c" />
+    <ClCompile Include="..\..\Src\485Node\SbwMgr.c" />
+    <ClCompile Include="..\..\Src\485Node\ShelfLock.c" />
+    <ClCompile Include="..\..\Src\485Node\Rs485ProtocolNode.c" />
+    <ClCompile Include="..\..\Src\485Node\ShelfLockOd.c" />
+    <ClCompile Include="..\..\Src\Base\BaseOd.c" />
+    <ClCompile Include="..\..\Src\Base\Dev.c" />
+    <ClCompile Include="..\..\Src\Base\HwFwVer.c" />
+    <ClCompile Include="..\..\Src\Base\IdentifyInfo.c" />
+    <ClCompile Include="..\..\Src\Base\Obj.c" />
+    <ClCompile Include="..\..\Src\Base\Sensor.c" />
+    <ClCompile Include="..\..\Src\Base\Utp.c" />
+    <ClCompile Include="..\..\Src\Base\UtpPdo.c" />
+    <ClCompile Include="..\..\Src\CanOpenMaster\BlockProtocol.c" />
+    <ClCompile Include="..\..\Src\CanOpenMaster\Emcy.c" />
+    <ClCompile Include="..\..\Src\CanOpenMaster\Frame.c" />
+    <ClCompile Include="..\..\Src\CanOpenMaster\Master.c" />
+    <ClCompile Include="..\..\Src\CanOpenMaster\MasterNode.c" />
+    <ClCompile Include="..\..\Src\CanOpenMaster\MasterSdo.c" />
+    <ClCompile Include="..\..\Src\CanOpenMaster\Od.c" />
+    <ClCompile Include="..\..\Src\CanOpenMaster\Pdo.c" />
+    <ClCompile Include="..\..\Src\CanOpenMaster\SegmentProtocol.c" />
+    <ClCompile Include="..\..\Src\CanOpenSlave\CO_driver.c" />
+    <ClCompile Include="..\..\Src\CanOpenSlave\Slave.c" />
+    <ClCompile Include="..\..\Src\CanOpenSlave\CANopen.c" />
+    <ClCompile Include="..\..\Src\CanOpenSlave\CO_OD.c" />
+    <ClCompile Include="..\..\Src\CanOpenSlave\stack\CO_Emergency.c" />
+    <ClCompile Include="..\..\Src\CanOpenSlave\stack\CO_HBconsumer.c" />
+    <ClCompile Include="..\..\Src\CanOpenSlave\stack\CO_NMT_Heartbeat.c" />
+    <ClCompile Include="..\..\Src\CanOpenSlave\stack\CO_PDO.c" />
+    <ClCompile Include="..\..\Src\CanOpenSlave\stack\CO_SDO.c" />
+    <ClCompile Include="..\..\Src\CanOpenSlave\stack\CO_SDOmaster.c" />
+    <ClCompile Include="..\..\Src\CanOpenSlave\stack\CO_SYNC.c" />
+    <ClCompile Include="..\..\Src\CanOpenSlave\stack\CO_trace.c" />
+    <ClCompile Include="..\..\Src\CanOpenSlave\stack\crc16-ccitt.c" />
+    <ClCompile Include="..\..\Src\CanOpenSlave\UnitOD.c" />
+    <ClCompile Include="..\..\Src\CMSIS\GD\GD32F403\Source\system_gd32f403.c" />
+    <ClCompile Include="..\..\Src\common\CheckSum.c" />
+    <ClCompile Include="..\..\Src\common\CmdLine.c" />
+    <ClCompile Include="..\..\Src\common\CommChecker.c" />
+    <ClCompile Include="..\..\Src\common\Common.c" />
+    <ClCompile Include="..\..\Src\common\CostTime.c" />
+    <ClCompile Include="..\..\Src\common\crc16.c" />
+    <ClCompile Include="..\..\Src\common\crc32.c" />
+    <ClCompile Include="..\..\Src\common\DateTime.c" />
+    <ClCompile Include="..\..\Src\common\debug.c" />
+    <ClCompile Include="..\..\Src\common\Led.c" />
+    <ClCompile Include="..\..\Src\common\List.c" />
+    <ClCompile Include="..\..\Src\common\Log.c" />
+    <ClCompile Include="..\..\Src\common\md5.c" />
+    <ClCompile Include="..\..\Src\common\Message.c" />
+    <ClCompile Include="..\..\Src\common\Page.c" />
+    <ClCompile Include="..\..\Src\common\Printf.c" />
+    <ClCompile Include="..\..\Src\common\queue.c" />
+    <ClCompile Include="..\..\Src\common\Record.c" />
+    <ClCompile Include="..\..\Src\common\SafeBuf.c" />
+    <ClCompile Include="..\..\Src\common\SectorMgr.c" />
+    <ClCompile Include="..\..\Src\common\StringEx.c" />
+    <ClCompile Include="..\..\Src\common\SwTimer.c" />
+    <ClCompile Include="..\..\Src\common\Threshold.c" />
+    <ClCompile Include="..\..\Src\common\Tlv.c" />
+    <ClCompile Include="..\..\Src\common\TlvPair.c" />
+    <ClCompile Include="..\..\Src\Driver\AdcUse.c" />
+    <ClCompile Include="..\..\Src\Driver\DriverAdc.c" />
+    <ClCompile Include="..\..\Src\Driver\DriverCan.c" />
+    <ClCompile Include="..\..\Src\Driver\DriverFmc.c" />
+    <ClCompile Include="..\..\Src\Driver\DriverIo.c" />
+    <ClCompile Include="..\..\Src\Driver\DriverLed.c" />
+    <ClCompile Include="..\..\Src\Driver\DriverTimer.c" />
+    <ClCompile Include="..\..\Src\Driver\DriverUart.c" />
+    <ClCompile Include="..\..\Src\Driver\NTC.c" />
+    <ClCompile Include="..\..\Src\Driver\NTCLib.c" />
+    <ClCompile Include="..\..\Src\Driver\RcuMap.c" />
+    <ClCompile Include="..\..\Src\GD32F403_standard_peripheral\Source\gd32f403_adc.c" />
+    <ClCompile Include="..\..\Src\GD32F403_standard_peripheral\Source\gd32f403_bkp.c" />
+    <ClCompile Include="..\..\Src\GD32F403_standard_peripheral\Source\gd32f403_can.c" />
+    <ClCompile Include="..\..\Src\GD32F403_standard_peripheral\Source\gd32f403_crc.c" />
+    <ClCompile Include="..\..\Src\GD32F403_standard_peripheral\Source\gd32f403_ctc.c" />
+    <ClCompile Include="..\..\Src\GD32F403_standard_peripheral\Source\gd32f403_dac.c" />
+    <ClCompile Include="..\..\Src\GD32F403_standard_peripheral\Source\gd32f403_dbg.c" />
+    <ClCompile Include="..\..\Src\GD32F403_standard_peripheral\Source\gd32f403_dma.c" />
+    <ClCompile Include="..\..\Src\GD32F403_standard_peripheral\Source\gd32f403_exmc.c" />
+    <ClCompile Include="..\..\Src\GD32F403_standard_peripheral\Source\gd32f403_exti.c" />
+    <ClCompile Include="..\..\Src\GD32F403_standard_peripheral\Source\gd32f403_fmc.c" />
+    <ClCompile Include="..\..\Src\GD32F403_standard_peripheral\Source\gd32f403_fwdgt.c" />
+    <ClCompile Include="..\..\Src\GD32F403_standard_peripheral\Source\gd32f403_gpio.c" />
+    <ClCompile Include="..\..\Src\GD32F403_standard_peripheral\Source\gd32f403_i2c.c" />
+    <ClCompile Include="..\..\Src\GD32F403_standard_peripheral\Source\gd32f403_misc.c" />
+    <ClCompile Include="..\..\Src\GD32F403_standard_peripheral\Source\gd32f403_pmu.c" />
+    <ClCompile Include="..\..\Src\GD32F403_standard_peripheral\Source\gd32f403_rcu.c" />
+    <ClCompile Include="..\..\Src\GD32F403_standard_peripheral\Source\gd32f403_rtc.c" />
+    <ClCompile Include="..\..\Src\GD32F403_standard_peripheral\Source\gd32f403_sdio.c" />
+    <ClCompile Include="..\..\Src\GD32F403_standard_peripheral\Source\gd32f403_spi.c" />
+    <ClCompile Include="..\..\Src\GD32F403_standard_peripheral\Source\gd32f403_timer.c" />
+    <ClCompile Include="..\..\Src\GD32F403_standard_peripheral\Source\gd32f403_usart.c" />
+    <ClCompile Include="..\..\Src\GD32F403_standard_peripheral\Source\gd32f403_wwdgt.c" />
+    <ClCompile Include="..\..\Src\Main\CcuLed.c" />
+    <ClCompile Include="..\..\Src\Main\LogUser.c" />
+    <ClCompile Include="..\..\Src\Main\MemMap.c" />
+    <ClCompile Include="..\..\Src\Main\console.c" />
+    <ClCompile Include="..\..\Src\Main\Fsm.c" />
+    <ClCompile Include="..\..\Src\Main\gd32f403_it.c" />
+    <ClCompile Include="..\..\Src\Main\main.c" />
+    <ClCompile Include="..\..\Src\Main\Nvds.c" />
+    <ClCompile Include="..\..\Src\Main\OtaFile.c" />
+    <ClCompile Include="..\..\Src\Main\Shell.c" />
+    <ClCompile Include="..\..\Src\Main\Sm.c" />
+    <ClCompile Include="..\..\Src\Main\systick.c" />
+    <ClCompile Include="..\..\Src\Pms\Bms.c" />
+    <ClCompile Include="..\..\Src\Pms\Charger.c" />
+    <ClCompile Include="..\..\Src\Pms\Pms.c" />
+    <ClCompile Include="..\..\Src\Pms\PmsMgr.c" />
+    <ClCompile Include="..\..\Src\Pms\PmsOd.c" />
+    <ClCompile Include="..\..\Src\Pms\PmsOd_Test.c" />
+    <ClCompile Include="..\..\Src\WhMeter\MeterOd.c" />
+    <ClCompile Include="..\..\Src\WhMeter\MeterProtocol.c" />
+    <ClCompile Include="..\..\Src\WhMeter\WhMeter.c" />
+  </ItemGroup>
+  <ItemGroup>
+    <Text Include="..\..\Src\Main\readme.txt" />
+  </ItemGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
+  <ImportGroup Label="ExtensionTargets">
+  </ImportGroup>
+</Project>
